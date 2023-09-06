@@ -2,9 +2,7 @@ const router = require("express").Router();
 const posts = require("../controllers/posts.controller.js");
 
 // Create a new Tutorial
-router.post("/", () => {
-  console.log("POST Request");
-});
+router.post("/", posts.create);
 
 // Retrieve all Tutorials
 router.get("/", posts.findAll);
