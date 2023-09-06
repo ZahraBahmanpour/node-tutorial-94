@@ -11,6 +11,7 @@ db.mongoose
   .connect(db.url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    dbName: "blog",
   })
   .then(() => {
     console.log("Connected to the database!");
