@@ -16,8 +16,6 @@ router.get("/:id", () => {
 router.put("/:id", posts.update);
 
 // Delete a Tutorial with id
-router.delete("/:id", () => {
-  console.log("DELETE Request");
-});
+router.delete("/:id", posts.delete);
 
 module.exports = router;
