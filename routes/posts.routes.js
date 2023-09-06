@@ -13,9 +13,7 @@ router.get("/:id", () => {
 });
 
 // Update a Tutorial with id
-router.put("/:id", () => {
-  console.log("PUT Request");
-});
+router.put("/:id", posts.update);
 
 // Delete a Tutorial with id
 router.delete("/:id", () => {
