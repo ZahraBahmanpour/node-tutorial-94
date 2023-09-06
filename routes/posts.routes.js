@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const posts = require("../controllers/posts.controller.js");
 
 // Create a new Tutorial
 router.post("/", () => {
@@ -6,9 +7,7 @@ router.post("/", () => {
 });
 
 // Retrieve all Tutorials
-router.get("/", () => {
-  console.log("GET Request");
-});
+router.get("/", posts.findAll);
 
 // Retrieve a single Tutorial with id
 router.get("/:id", () => {
