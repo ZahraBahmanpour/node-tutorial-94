@@ -8,9 +8,7 @@ router.post("/", posts.create);
 router.get("/", posts.findAll);
 
 // Retrieve a single Tutorial with id
-router.get("/:id", () => {
-  console.log("GET Request");
-});
+router.get("/:id", posts.find);
 
 // Update a Tutorial with id
 router.put("/:id", posts.update);
